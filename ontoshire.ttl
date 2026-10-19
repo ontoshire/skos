@@ -1,0 +1,21 @@
+# Ontoshire publishing manifest — a MIRROR.
+#
+# This repository contains no RDF. SKOS — Simple Knowledge Organization System is published by
+# somebody else; the manifest names their canonical URL and Ontoshire fetches
+# it unchanged at publish time. Nothing here is a fork, and nothing here is
+# maintained by Ontoshire.
+#
+# Source:  https://www.w3.org/2009/08/skos-reference/skos.rdf
+# Licence: W3C Document Licence — https://www.w3.org/copyright/document-license-2023/
+
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<> a dcat:Catalog ;
+    dcat:dataset <#onto> .
+
+<#onto> a dcat:Dataset ;
+    dcterms:title "SKOS — Simple Knowledge Organization System" ;
+    dcterms:identifier <http://www.w3.org/2004/02/skos/core> ;
+    dcterms:license <https://www.w3.org/copyright/document-license-2023/> ;
+    dcat:distribution [ dcat:downloadURL <https://www.w3.org/2009/08/skos-reference/skos.rdf> ] .
